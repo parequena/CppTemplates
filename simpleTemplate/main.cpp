@@ -11,5 +11,7 @@ int main()
     Foo<std::string> f{ "VALUE" }; // This will create an string foo class.
     f.print();
 
+    getSize(3, "hello", 14.7F); // This will print how many parameters you parsed.
+
     return 0;
 }

@@ -25,9 +25,9 @@ struct Foo;
  
 ## Installation and compilation
 1. Compile this example with any compiler.
-2. In my case, clang++, execute: `clang++ main.cpp -o simple`
+2. In my case, clang++, execute: `clang++ -std=c++20 main.cpp -o simple`
 3. Execute code: `./simple`
 
 All in one:
 
-`clang++ main.cpp -o simple && ./simple`
+`clang++ -std=c++20 main.cpp -o simple && ./simple`

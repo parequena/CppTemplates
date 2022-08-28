@@ -43,4 +43,14 @@ private:
     T val_{};
 };
 
+// ------------------------------------------------------------------------------------------------------------------------------------
+// Simple parameter pack use :D
+//
+template <typename... Ts>
+void getSize(Ts... ts)
+{
+    constexpr std::size_t size { sizeof...(ts) }; // ... will expand the parameter pack!
+    std::cout << "You parsed " << size << "arguments.\n";
+}
+
 #endif // SIMPLE_HPP
