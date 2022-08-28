@@ -4,10 +4,10 @@
 #include <type_traits>
 
 // ------------------------------------------------------------------------------------------------------------------------------------
-// Get N'th type from the list.
+// Find type on the list of types.
 //
 template<typename... Ts>
-struct find_idx { };
+struct find_idx;
 
 template<typename T, typename... Ts>
 struct find_idx<T, T, Ts...> { constexpr static std::size_t value{ 0 }; };

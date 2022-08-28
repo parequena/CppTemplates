@@ -6,19 +6,19 @@
 
 ## Introduction
 
-Will get N'th element of the list.
+Will get type on the typelist.
 
 ## Functions / classes
 ``` cpp
-// Get N'th type from the list.
-template <std::size_t N, typename... Ts>
-struct get_type { };
+// Find type on the list of types.
+template<typename... Ts>
+struct find_idx;
 
-template <typename T, typename... Ts>
-struct get_type<0, T, Ts...>;
+template<typename T, typename... Ts>
+struct find_idx<T, T, Ts...>;
 
-template <std::size_t N, typename T, typename... Ts>
-struct get_type<N, T, Ts...>;
+template<typename T, typename U, typename... Ts>
+struct find_idx<T, U, Ts...>;
 ```
  
 ## Installation and compilation
