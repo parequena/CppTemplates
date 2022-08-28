@@ -1,5 +1,3 @@
-# Behaivour Tree
-
 [Twitter](https://twitter.com/conPdePABLO)
 
 [LinkedIn](https://www.linkedin.com/in/parequena/)
