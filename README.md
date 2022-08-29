@@ -20,4 +20,5 @@ Tested with clang++ using STD=c++20 (but I'm not using any C++20 feature).
 ## Installation and compilation
 1. All subfolders has their own `README.md` and instructions to compile.
 2. But just grab any console and compiler and compile all individual codes.
-3. **TODO** : Create a script to compile all codes and execute them.
+3. I've created a python code to compile (with clang++) all the codes and execute them **NOT TESTED**
+4. Just call `python3 exec.py` and wait for magic to happend!
