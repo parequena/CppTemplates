@@ -39,5 +39,4 @@ for filename in os.listdir(find_dir):
     if not os.path.isdir(ldir):
        continue
 
-    print(filename)
     compile_exec_code(filename)
