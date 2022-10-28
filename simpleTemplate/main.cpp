@@ -13,5 +13,9 @@ int main()
 
     getSize(3, "hello", 14.7F); // This will print how many parameters you parsed.
 
+    // CTAD Example!
+    int i = justACast<int>( float{3.3f} );
+    print(i);
+
     return 0;
 }

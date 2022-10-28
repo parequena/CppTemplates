@@ -8,6 +8,8 @@
 
 This are simple examples
 
+You have a simple [CTAD](https://en.cppreference.com/w/cpp/language/class_template_argument_deduction) example :D
+
 ## Functions / classes
 ``` cpp
 // Print typename T parameter.
@@ -21,6 +23,10 @@ void printNtimes();
 // Template struct.
 template <typename T>
 struct Foo;
+
+// Simple CTAD
+template <typename T, typename U>
+T justACast(U u);
 ```
  
 ## Installation and compilation

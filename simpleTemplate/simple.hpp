@@ -53,4 +53,14 @@ void getSize(Ts... ts)
     std::cout << "You parsed " << size << "arguments.\n";
 }
 
+// ------------------------------------------------------------------------------------------------------------------------------------
+// Simple CTAD
+//
+template <typename T, typename U>
+T justACast(U u)
+{
+    return static_cast<T>(u);
+}
+
+
 #endif // SIMPLE_HPP
